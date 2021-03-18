@@ -16,24 +16,22 @@
 
   <!-- Custom styles for this template -->
   <link href="{% static 'css/simple-sidebar.css' %}" rel="stylesheet" type="text/css">
-  <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css"  />
+  <!-- <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css" > -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard2.css' %}" />
+  <script src="{% static 'js/dashboard2.js' %}"></script>
 
 </head>
-
 <body>
-
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
     <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Start Bootstrap </div>
+      <div class="sidebar-heading">Types of Maps </div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+        <a href="{% url 'dashboard1' %}" class="list-group-item list-group-item-action bg-light">Heatmaps</a>
+        <a href="{% url 'dashboard2' %}" class="list-group-item list-group-item-action bg-light">Polygon</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Circles</a>
       </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -42,7 +40,7 @@
     <div id="page-content-wrapper">
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+        <button class="btn btn-primary" id="menu-toggle"> &#9776; </button>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -70,17 +68,53 @@
           </ul>
         </div>
       </nav>
-
-      <!-- <div class="container-fluid"> -->
-      <!--  <h1 class="mt-4">Simple Sidebar</h1>
-        <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
-      -->
-      <div class="container" id="map"></div>
-      <!-- </div> -->
       
+      <div id="controls" class="nicebox">
+        <div>
+          <select id="census-variable">
+            <option
+              value="https://storage.googleapis.com/mapsdevsite/json/DP02_0066PE"
+            >
+            Percent of population over 25 that completed high school
+            </option>
+            <option
+              value="https://storage.googleapis.com/mapsdevsite/json/DP05_0017E"
+            >
+            Median age
+            </option>
+            <option
+              value="https://storage.googleapis.com/mapsdevsite/json/DP05_0001E"
+            >
+            Total population
+            </option>
+            <option
+              value="https://storage.googleapis.com/mapsdevsite/json/DP02_0016E"
+            >
+            Average family size
+            </option>
+            <option
+            value="https://storage.googleapis.com/mapsdevsite/json/DP03_0088E"
+            >
+            Per-capita income
+            </option>
+          </select>
+        </div>
+        <div id="legend">
+          <div id="census-min">min</div>
+          <div class="color-key"><span id="data-caret">&#x25c6;</span></div>
+          <div id="census-max">max</div>
+        </div>
+      </div>
+      
+      <div id="data-box" class="nicebox">
+        <label id="data-label" for="data-value"></label>
+        <span id="data-value"></span>
+      </div>
+      
+      <div id="map"></div>
+    
     </div>
-    <!-- /#page-content-wrapper -->
+  <!-- /#page-content-wrapper -->
 
   </div>
   <!-- /#wrapper -->
@@ -95,15 +129,15 @@
     src="https://maps.googleapis.com/maps/api/js?key={{api_key}}&callback=initMap&libraries=visualization&v=weekly"
     async
   ></script>
-
+  
   <!-- Menu Toggle Script -->
   <script>
     $("#menu-toggle").click(function(e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
-    });
+  });
   </script>
-  
+
 </body>
 
-</html>     
+</html>
