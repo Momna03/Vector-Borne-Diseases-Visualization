@@ -25,28 +25,16 @@
 	        </button>
         </div>
 				<div class="p-4">
-		  		<h1><a href="#" class="logo">Portfolic <span>Portfolio Agency</span></a></h1>
+		  		<h1><a href="#" class="logo">Vector Borne Diseases Visualization</a></h1>
 	        <ul class="list-unstyled components mb-5">
+	          <li>
+	            <a href="{% url 'dashboard1' %}"><span class="fa fa-home mr-3"></span> Heatmaps</a>
+	          </li>
 	          <li class="active">
-	            <a href="#"><span class="fa fa-home mr-3"></span> Home</a>
+	              <a href="{% url 'dashboard2' %}"><span class="fa fa-user mr-3"></span> Polygons</a>
 	          </li>
 	          <li>
-	              <a href="#"><span class="fa fa-user mr-3"></span> About</a>
-	          </li>
-	          <li>
-              <a href="#"><span class="fa fa-briefcase mr-3"></span> Works</a>
-	          </li>
-	          <li>
-              <a href="#"><span class="fa fa-sticky-note mr-3"></span> Blog</a>
-	          </li>
-	          <li>
-              <a href="#"><span class="fa fa-suitcase mr-3"></span> Gallery</a>
-	          </li>
-	          <li>
-              <a href="#"><span class="fa fa-cogs mr-3"></span> Services</a>
-	          </li>
-	          <li>
-              <a href="#"><span class="fa fa-paper-plane mr-3"></span> Contacts</a>
+              <a href="#"><span class="fa fa-briefcase mr-3"></span> Circles</a>
 	          </li>
 	        </ul>
 
@@ -60,6 +48,54 @@
 	          </form>
 					</div>
 
+
+
+          <div id="controls" class="nicebox">
+            <div>
+              <select id="census-variable">
+                <option
+                  value="https://storage.googleapis.com/mapsdevsite/json/DP02_0066PE"
+                >
+                  Percent of population over 25 that completed high school
+                </option>
+                <option
+                  value="https://storage.googleapis.com/mapsdevsite/json/DP05_0017E"
+                >
+                  Median age
+                </option>
+                <option
+                  value="https://storage.googleapis.com/mapsdevsite/json/DP05_0001E"
+                >
+                  Total population
+                </option>
+                <option
+                  value="https://storage.googleapis.com/mapsdevsite/json/DP02_0016E"
+                >
+                  Average family size
+                </option>
+                <option
+                  value="https://storage.googleapis.com/mapsdevsite/json/DP03_0088E"
+                >
+                  Per-capita income
+                </option>
+              </select>
+            </div>
+            <div id="legend">
+              <div id="census-min">min</div>
+              <div class="color-key"><span id="data-caret">&#x25c6;</span></div>
+              <div id="census-max">max</div>
+            </div>
+          </div>
+          <div id="data-box" class="nicebox">
+            <label id="data-label" for="data-value"></label>
+            <span id="data-value"></span>
+          </div>
+
+          
+
+
+
+          
 	        <div class="footer">
 	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
@@ -70,55 +106,16 @@
     	</nav>
 
         <!-- Page Content  -->
-      <div id="content" class="p-4 p-md-5 pt-5">
+      <div id="content" class="mt-1 mb-1 ml-2 mr-1 pt-1 pb-1 pl-4 pr-1">
 
-        <div id="controls" class="nicebox">
-          <div>
-            <select id="census-variable">
-              <option
-                value="https://storage.googleapis.com/mapsdevsite/json/DP02_0066PE"
-              >
-                Percent of population over 25 that completed high school
-              </option>
-              <option
-                value="https://storage.googleapis.com/mapsdevsite/json/DP05_0017E"
-              >
-                Median age
-              </option>
-              <option
-                value="https://storage.googleapis.com/mapsdevsite/json/DP05_0001E"
-              >
-                Total population
-              </option>
-              <option
-                value="https://storage.googleapis.com/mapsdevsite/json/DP02_0016E"
-              >
-                Average family size
-              </option>
-              <option
-                value="https://storage.googleapis.com/mapsdevsite/json/DP03_0088E"
-              >
-                Per-capita income
-              </option>
-            </select>
-          </div>
-          <div id="legend">
-            <div id="census-min">min</div>
-            <div class="color-key"><span id="data-caret">&#x25c6;</span></div>
-            <div id="census-max">max</div>
-          </div>
-        </div>
-        <div id="data-box" class="nicebox">
-          <label id="data-label" for="data-value"></label>
-          <span id="data-value"></span>
-        </div>
-
+        
         <div id="map"></div>
 
 
-        <h2 class="mb-4">Sidebar #05</h2>
+        <!--<h2 class="mb-4">Sidebar #05</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        -->
       </div>
 		</div>
 
