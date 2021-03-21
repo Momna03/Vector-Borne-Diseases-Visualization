@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">  
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link href="{% static 'css/dashboard2.css' %}" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard2.css' %}">
     
   </head>
   <body>
@@ -72,8 +72,8 @@
 			      </div>
           </div>
 
-        <div class="nicebox mb-4 mr-3" style="background: #88b2f1; border-color: #88b2f1">
-          <div>
+       <!-- <div class="nicebox mb-4 mr-3" style="background-color: #88b2f1; border-color: #88b2f1">-->
+          <div class="mb-4">
             <select id="census-variable" style="width: 100%;">
               <option
                 value="https://storage.googleapis.com/mapsdevsite/json/DP02_0066PE"
@@ -101,18 +101,19 @@
                 Per-capita income
               </option>
             </select>
-          </div>
-          <div id="legend">
-            <div id="census-min">min</div>
-            <div class="color-key"><span id="data-caret">&#x25c6;</span></div>
-            <div id="census-max">max</div>
-          </div>
+            <div id="legend">
+              <div id="census-min">min</div>
+              <div class="color-key"><span id="data-caret">&#x25c6;</span></div>
+              <div id="census-max">max</div>
+            </div>
+            <div id="data-box" class=" mb-4">
+              <label id="data-label" for="data-value"></label>
+              <span id="data-value"></span>
+            </div>
         </div>
-        <div id="data-box" class="nicebox mb-4">
-          <label id="data-label" for="data-value"></label>
-          <span id="data-value"></span>
-        </div>
+        
 
+        <!--</div> -->
 	        <div class="footer">
 	        	<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						<!--  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
@@ -120,11 +121,11 @@
 	        </div>
 
 	      </div>
+        
     	</nav>
 
         <!-- Page Content  -->
       <div id="content" class="mt-1 mb-1 ml-2 mr-1 pt-1 pb-1 pl-4 pr-1">
-
         
         <div id="map"></div>
 

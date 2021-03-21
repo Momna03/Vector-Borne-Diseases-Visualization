@@ -27,15 +27,17 @@ body,
 }
 
 #data-box {
-  top: 10px;
-  left: 500px;
-  height: 45px;
+  /*top: 10px;
+  left: 500px;*/
+  height: 25px;
   line-height: 45px;
   display: none;
+  text-align: center;
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 #census-variable {
-  width: 360px;
+  /*width: 360px;*/
   height: 20px;
 }
 
@@ -65,14 +67,13 @@ body,
 }
 
 #data-value {
-  font-size: 2em;
+  font-size: 2px;
   font-weight: bold;
 }
 
 #data-label {
-  font-size: 2em;
+  font-size: 2px;
   font-weight: normal;
-  padding-right: 10px;
 }
 
 #data-label:after {
