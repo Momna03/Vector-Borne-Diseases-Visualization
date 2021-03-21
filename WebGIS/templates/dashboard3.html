@@ -1,0 +1,104 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    <head>
+  	    <title>VBD | Dashboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">	
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link href="{% static 'css/dashboard3.css' %}" rel="stylesheet" type="text/css" >
+  	</head>
+  	<body>	
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	                <i class="fa fa-bars"></i>
+	                <span class="sr-only">Toggle Menu</span>
+	                </button>
+                </div>
+		        
+                <div class="p-3">
+		  	        <h1><a href="#" class="logo">Vector Borne Diseases Visualization</a></h1>
+			        <h6><i class="fa fa-globe"></i> Types of Maps</h6>
+	         
+	                <ul class="list-unstyled components mb-4">
+	                    <li>
+	            	    <a href="{% url 'dashboard1' %}">Heatmaps</a>
+	                    </li>
+	                    <li>
+	            	        <a href="{% url 'dashboard2' %}">Polygons</a>
+	                    </li>
+	                    <li class="active">
+                	        <a href="{% url 'dashboard3' %}">Circles</a>
+	                    </li>
+	                </ul>
+
+                    <!-- <div class="mb-5">
+                        <h3 class="h6 mb-3">Subscribe for newsletter</h3>
+                        <form action="#" class="subscribe-form">
+                            <div class="form-group d-flex">
+                                <div class="icon"><span class="icon-paper-plane"></span></div>
+                                <input type="text" class="form-control" placeholder="Enter Email Address">
+                            </div>
+                        </form>
+                    </div> -->
+                    <div class="mb-4">
+                        <h6><i class="wi wi-day-rain-wind"></i> Climate Conditions</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Temperature
+                            </label><br/>
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Rainfall
+                            </label><br/>
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Humidity
+                            </label><br/>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <!--	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+                            -->	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+	            </div>
+    	    </nav>
+
+            <!-- Page Content -->
+
+            <div id="content" class="mt-1 mb-1 ml-2 mr-1 pt-1 pb-1 pl-4 pr-1">    
+                <div id="map"></div>
+
+                <!--<h2 class="mb-4">Sidebar #05</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                -->
+            </div>
+        </div>
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="{% static 'js/dashboard3.js' %}" type="text/javascript"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key={{api_key}}&callback=initMap&libraries=visualization&v=weekly"
+            async
+        ></script>
+        <!-- Visualization library is used for displaying heatmaps. 
+        It contains a HeatmapLayer class. 
+        When Maps API JavaScript is called this class must be loaded. 
+        -->
+
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/popper.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
