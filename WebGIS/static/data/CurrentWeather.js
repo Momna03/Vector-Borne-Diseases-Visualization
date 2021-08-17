@@ -4,7 +4,7 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
     "timezone": "Asia/Karachi",
     "timezone_offset": 18000,
     "current": {
-        "dt": 1629193845,
+        "dt": 1629194753,
         "sunrise": 1629162406,
         "sunset": 1629209118,
         "temp": 305.07,
@@ -15,8 +15,8 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
         "uvi": 6.84,
         "clouds": 20,
         "visibility": 6000,
-        "wind_speed": 7.2,
-        "wind_deg": 220,
+        "wind_speed": 6.69,
+        "wind_deg": 230,
         "weather": [
             {
                 "id": 801,
@@ -27,66 +27,6 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
         ]
     },
     "minutely": [
-        {
-            "dt": 1629193860,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629193920,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629193980,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194040,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194100,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194160,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194220,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194280,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194340,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194400,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194460,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194520,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194580,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194640,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194700,
-            "precipitation": 0
-        },
         {
             "dt": 1629194760,
             "precipitation": 0
@@ -270,6 +210,66 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
         {
             "dt": 1629197460,
             "precipitation": 0
+        },
+        {
+            "dt": 1629197520,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197580,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197640,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197700,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197760,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197820,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197880,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197940,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198000,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198060,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198120,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198180,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198240,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198300,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198360,
+            "precipitation": 0
         }
     ]
 },{
@@ -278,7 +278,7 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
     "timezone": "Asia/Karachi",
     "timezone_offset": 18000,
     "current": {
-        "dt": 1629193845,
+        "dt": 1629194753,
         "sunrise": 1629162396,
         "sunset": 1629209097,
         "temp": 305.25,
@@ -289,8 +289,8 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
         "uvi": 6.84,
         "clouds": 20,
         "visibility": 6000,
-        "wind_speed": 7.2,
-        "wind_deg": 220,
+        "wind_speed": 6.69,
+        "wind_deg": 230,
         "weather": [
             {
                 "id": 801,
@@ -301,66 +301,6 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
         ]
     },
     "minutely": [
-        {
-            "dt": 1629193860,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629193920,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629193980,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194040,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194100,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194160,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194220,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194280,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194340,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194400,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194460,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194520,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194580,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194640,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194700,
-            "precipitation": 0
-        },
         {
             "dt": 1629194760,
             "precipitation": 0
@@ -544,6 +484,66 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
         {
             "dt": 1629197460,
             "precipitation": 0
+        },
+        {
+            "dt": 1629197520,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197580,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197640,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197700,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197760,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197820,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197880,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197940,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198000,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198060,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198120,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198180,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198240,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198300,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198360,
+            "precipitation": 0
         }
     ]
 },{
@@ -552,7 +552,7 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
     "timezone": "Asia/Karachi",
     "timezone_offset": 18000,
     "current": {
-        "dt": 1629193850,
+        "dt": 1629194754,
         "sunrise": 1629162418,
         "sunset": 1629209114,
         "temp": 305.23,
@@ -563,8 +563,8 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
         "uvi": 6.84,
         "clouds": 20,
         "visibility": 6000,
-        "wind_speed": 7.2,
-        "wind_deg": 220,
+        "wind_speed": 6.69,
+        "wind_deg": 230,
         "weather": [
             {
                 "id": 801,
@@ -575,66 +575,6 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
         ]
     },
     "minutely": [
-        {
-            "dt": 1629193860,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629193920,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629193980,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194040,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194100,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194160,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194220,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194280,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194340,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194400,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194460,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194520,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194580,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194640,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194700,
-            "precipitation": 0
-        },
         {
             "dt": 1629194760,
             "precipitation": 0
@@ -818,6 +758,66 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
         {
             "dt": 1629197460,
             "precipitation": 0
+        },
+        {
+            "dt": 1629197520,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197580,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197640,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197700,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197760,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197820,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197880,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197940,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198000,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198060,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198120,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198180,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198240,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198300,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198360,
+            "precipitation": 0
         }
     ]
 },{
@@ -826,7 +826,7 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
     "timezone": "Asia/Karachi",
     "timezone_offset": 18000,
     "current": {
-        "dt": 1629193850,
+        "dt": 1629194755,
         "sunrise": 1629162420,
         "sunset": 1629209140,
         "temp": 305,
@@ -851,66 +851,6 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
     },
     "minutely": [
         {
-            "dt": 1629193860,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629193920,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629193980,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194040,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194100,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194160,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194220,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194280,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194340,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194400,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194460,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194520,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194580,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194640,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194700,
-            "precipitation": 0
-        },
-        {
             "dt": 1629194760,
             "precipitation": 0
         },
@@ -1093,6 +1033,66 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
         {
             "dt": 1629197460,
             "precipitation": 0
+        },
+        {
+            "dt": 1629197520,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197580,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197640,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197700,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197760,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197820,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197880,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197940,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198000,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198060,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198120,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198180,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198240,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198300,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198360,
+            "precipitation": 0
         }
     ]
 },{
@@ -1101,7 +1101,7 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
     "timezone": "Asia/Karachi",
     "timezone_offset": 18000,
     "current": {
-        "dt": 1629193851,
+        "dt": 1629194756,
         "sunrise": 1629162332,
         "sunset": 1629209071,
         "temp": 304.18,
@@ -1126,66 +1126,6 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
     },
     "minutely": [
         {
-            "dt": 1629193860,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629193920,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629193980,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194040,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194100,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194160,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194220,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194280,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194340,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194400,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194460,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194520,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194580,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194640,
-            "precipitation": 0
-        },
-        {
-            "dt": 1629194700,
-            "precipitation": 0
-        },
-        {
             "dt": 1629194760,
             "precipitation": 0
         },
@@ -1367,6 +1307,66 @@ eqfeed_callback( { "type":"FeatureCollection", "features":[{
         },
         {
             "dt": 1629197460,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197520,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197580,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197640,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197700,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197760,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197820,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197880,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629197940,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198000,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198060,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198120,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198180,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198240,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198300,
+            "precipitation": 0
+        },
+        {
+            "dt": 1629198360,
             "precipitation": 0
         }
     ]
