@@ -7,6 +7,10 @@ $(document).ready(function () {
         document.getElementById('queryData').innerHTML = q1[0];
         console.log(q1[0]);
         console.log("Length:", q.length);
+
+        const script = document.createElement("script");
+        script.src = '/static/data/CurrentWeather.js';
+        document.getElementsByTagName("head")[0].appendChild(script);
     }
     else {
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -18,9 +22,7 @@ $(document).ready(function () {
         });
     }
     // Access Current Weather Data File
-    const script = document.createElement("script");
-    script.src = '/static/data/CurrentWeather.js';
-    document.getElementsByTagName("head")[0].appendChild(script);
+    
 
 CustomMarker.prototype = new google.maps.OverlayView();
 CustomMarker.prototype.draw = function() {
